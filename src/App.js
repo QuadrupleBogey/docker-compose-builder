@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './containers/header';
-import ICannotThinkOfAName from './containers/ICannotThinkOfAName';
+import Body from './containers/body';
 
 import './App.css';
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header version={version} handleChange={setVersion} index={versionIndex} />
-      <ICannotThinkOfAName />
+      <Body version={version[versionIndex]} />
     </div>
   );
 }
